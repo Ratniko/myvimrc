@@ -67,7 +67,7 @@ let g:mapleader = " "
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" :W sudo saves the file 
+" :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
@@ -84,7 +84,7 @@ set hid                         " A buffer becomes hidden when it is abandoned
 set backspace=eol,start,indent  " Configure backspace so it acts as it should act
 set whichwrap+=<,>,h,l          " Backspace and cursor keys wrap too
 set ignorecase                  " Ignore case when searching
-set smartcase                   " When searching try to be smart about cases 
+set smartcase                   " When searching try to be smart about cases
     "/copyright      " Case insensitive
     "/Copyright      " Case sensitive
     "/copyright\C    " Case sensitive
@@ -97,10 +97,9 @@ set showmatch                   " Show matching brackets when text indicator is 
 set mat=2                       " How many tenths of a second to blink when matching brackets
 set foldcolumn=0 " Extra margin to the left
 set cursorline " Highlight current line
-set list
 
 " Avoid garbled characters in Chinese language windows OS
-let $LANG='en' 
+let $LANG='en'
 set langmenu=en
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
@@ -257,7 +256,7 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
-" Specify the behavior when switching between buffers 
+" Specify the behavior when switching between buffers
 try
   set switchbuf=useopen,usetab,newtab
   set stal=2
