@@ -95,8 +95,8 @@ set lazyredraw                  " Don't redraw while executing macros (good perf
 set magic                       " For regular expressions turn magic on
 set showmatch                   " Show matching brackets when text indicator is over them
 set mat=2                       " How many tenths of a second to blink when matching brackets
-set foldcolumn=0 " Extra margin to the left
-set cursorline " Highlight current line
+set foldcolumn=0                " Extra margin to the left
+set cursorline                  " Highlight current line
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
@@ -186,8 +186,8 @@ set nojoinspaces                " Prevents inserting two spaces after punctuatio
 set splitright                  " Puts new vsplit windows to the right of the current
 set splitbelow                  " Puts new split windows to the bottom of the current
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
-set nowrap                      " Do not wrap long lines
-set smartindent                 " Smart indent
+set wrap                        " wrap long lines
+set nosmartindent               " Do not use Smart indent, i.e. do not remove indent if I type #
 
 
 """"""""""""""""""""""""""""""
